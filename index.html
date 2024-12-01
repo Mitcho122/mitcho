@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitcho's Football Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="script" href="script.js"> 
+   
+   
+</head>
+<body>
+    <section class="header">
+        <nav> 
+           <a href="index.html"><img src="image/1.jpg.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-time" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PROGRAMS</a></li>
+                    <li><a href="">GALLERY</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>World's Best Academy</h1>
+        <p> Mitcho's academy offer a variety of programs to cater for diffrent ages, skill levels and
+            career aspirations. </p>
+            <a href="" class="hero-btn">Vist Us To Know More</a>
+    </div>
+
+    </section>
+
+    <!------ course ------>
+
+    <section class="course">
+        <h1>courses we offer</h1>
+        <p>We focus on the introduction of basic skils
+         and concepts of football in a fun engaging way</p>
+
+         <div class="row">
+            <div class="course-col">
+                <h3>Youth Program</h3>
+                <p>a program that focus on introducing young children to basic skils and concepts of football in a fun way</p>
+         </div>
+         <div class="row">
+            <div class="course-col">
+                <h3>Elite Program</h3>
+                <p>This program is designed for highly talented young players who have the potential to reach professional levels</p>
+         </div>
+         <div class="row">
+            <div class="course-col">
+                <h3>Adult Program</h3>
+                <p> This program cater to adults who want to play football for fun and fitness without the pressure of competition</p>
+         </div>
+         <div class="row">
+            <div class="course-col">
+                <h3>Coaching Program</h3>
+                <p>Academie offers coaching courses for aspiring coaches to gain qualifications and learn the latest methodologies</p>
+         </div>
+    </section>
+
+    <!---------- Coach -------->
+
+    <section class="coach">
+        <h1>Coach Profile</h1>
+        <p>coaching courses for aspiring coaches to gain qualifications and learn the latest methodologies</p>
+
+    </section>
+
+    <div class="coach-profile">
+        <img src="image/ig.jpg.jpg" alt="Coach's Photo">
+        <h1>Pablo Jackson</h1>
+        <h2>Qualifications</h2>
+        <ul>
+            <li>Accredited Coach Training Program (ACTP) </li>
+            <li>Diploma</li>
+        </ul>
+        <h2>Coaching Philosophy</h2>
+        <p>Player-Centered Philosophy<p>
+        "Emphasizes the well-being and development of individual players, <p>
+        considering their needs, emotions, and learning styles."</p>
+       
+    </div>
+
+    <div class="coach-profile">
+        <img src="image/okay.jpg.jpg" alt="Coach's Photo">
+        <h1> King Giddy </h1>
+        <h2>Qualifications</h2>
+        <ul>
+            <li>Associate Certified Coach (ACC)</li>
+            <li>Diploma</li>
+        </ul>
+        <h2>Coaching Philosophy</h2>
+        <p>Development over victory.<p>
+            “I firmly believe in process-oriented coaching.<p>
+             I prioritize player development over win-loss records <p>in the belief this paves the way to lasting success.”</p>
+      
+    </div>
+
+    <div class="coach-profile">
+        <img src="image/haha.jpg" alt="Coach's Photo">
+        <h1>Mike Carson</h1>
+        <h2>Qualifications</h2>
+        <ul>
+            <li>Professional Certified Coach (PCC)</li>
+            <li>Diploma</li>
+        </ul>
+        <h2>Coaching Philosophy</h2>
+        <p> Teamwork before individual glory.<p>
+            “In my view, collective effort trumps solo brilliance<p>
+            Thus, I focus on <i><B>nurturing cohesion</B></i> and fostering a team-first mentality among my athletes.”</p>
+     
+    </div>
+
+    <div class="coach-profile">
+        <img src="image/Snap.jpg.jpg" alt="Coach's Photo">
+        <h1>Mitcho Mitcho</h1>
+        <h2>Qualifications</h2>
+        <ul>
+            <li>Master Certified Coach (MCC)</li>
+            <li>Diploma</li>
+        </ul>
+        <h2>Coaching Philosophy</h2>
+        <p> Empowering self-confident athletes.<p>
+            “My task is to cultivate confident athletes. <p>
+        I do this by instilling a sense of self-belief and fostering an<p>
+             environment where they feel empowered to perform.”</p>
+       
+        </div>
+
+
+    <!---------JavaScript for Toggle Menu---------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+
+    
+</div> 
+
+<!------------calendar------------>
+
+<div class="calendar-container">
+    <h1>Training Schedule Calendar</h1>
+    <div class="calendar" id="calendar"></div>
+</div>
+
+<div class="event-details" id="event-details">
+    <h2>Event Details</h2>
+    <p id="event-info"></p>
+</div>
+
+  <!-----------enrollment form------------->
+  <fieldset>
+    <legend>Enrollment form</legend>
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+  
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone"><br><br>
+  
+          <label for="program">Program:</label>
+          <select id="program" name="program">
+              <option value="program1">Youth Program</option>
+              <option value="program2">Elite Program</option>
+              <option value="program3">Adult Program</option>
+              <option value="program4">Coaching Program</option>
+          </select><br><br>
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br><br>
+  
+          <input type="submit" value="Submit">
+      </form>
+
+    </fieldset>
+
+  <!---------------gallary---------------->
+<fieldset>
+    <div class="gallery">
+        <h2>Mitcho's Football Academy Gallery</h2>
+        <div class="gallery-item">
+            <img src="image/5.jpg.jpg" alt="Image 1">
+        
+        </div>
+        <div class="gallery-item">
+            <img src="image/3.jpg.jpg" alt="Image 2">
+            
+        </div>
+        <div class="gallery-item">
+           <iframe src="https://www.youtube.com/embed/8SonHSskV6w?si=MUdPq4H2kXl_Ch4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin";width="800" height="500" allowfullscreen></iframe>
+        
+        </div>
+        <div class="gallery-item">
+            <img src="image/7.jpg.jpg" alt="Image 3">
+           
+        </div>
+
+        <div class="gallery-item">
+            <img src="image/8.jpg.jpg" alt="Image 2">
+            
+        </div>
+        <div class="gallery-item">
+            <img src="image/6.jpg.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="image/22.jpg.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="image/2.jpg.jpg" alt="Image 2">
+        </div>
+        </div>
+
+    </fieldset>
+        <!----------------testimonials------------->
+        <fieldset>
+    <section class="testimonials">
+        <h2>What Our Students Say</h2>
+
+        <div class="testimonial-card">
+            <img src="image/mitcho.jpg">
+            <p>"This course has been a game-changer for me. The instructor's expertise and the practical approach made learning enjoyable and effective."</p>
+            <h3>- Cyrus Mitcho</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        <div class="testimonial-card">
+            <img src="image/haha.jpg">
+            <p>"I'm so grateful for the support and guidance I received from the faculty. They truly care about their students' success."</p>
+            <h3>- Jo Smith</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        </section>
+    </fieldset>
+        <!--------------contact information-------------->
+        <fieldset>
+            <legend><h2>contact-form</h2></legend>
+    <section class="contact form">
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</fieldset>
+
+<!--------------Call To Action--------------->
+
+<section class="cta">
+    <h1>Enroll for our Various Online Courses<br>Anywhere From The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+    <section class="map">
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.5742292643955!2d-79.38318658108886!3d43.65348177910122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4a3434f8231f1%3A0x4c58a5698fe3f572!2sRoyal%20Ontario%20Museum!5e0!3m2!1sen!2sca!4v1694387980962!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <script src="script.js"></script>
+
+   
+<hr>
+
+&lt;&lt;&lt; &copy; Mitcho's Football Academy,<a href="about.html">click here</a>&gt;&gt;&gt;
+<p>
+    <a href="#">Back to Top</a>
+</p>
+
+
+<!------------ Footer -------------->
+<footer>
+    <p>&copy; 2024 Mitcho's Football Academy. All Rights Reserved.</p>
+  </footer>
+</body> 
+</html>
